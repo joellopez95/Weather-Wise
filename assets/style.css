@@ -1,0 +1,59 @@
+body {
+    font-family:Arial;
+    background-color: grey
+}
+
+.container {
+max-width:500px;
+margin: 0 auto;
+padding: 20px;
+background-color: white;
+border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    margin-top: 20px;
+}
+
+form.input{
+
+    flex: 1;
+    padding:10px;
+    border:1px
+}
+
+button {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+#search-history {
+    margin-top: 20px;
+}
+
+#search-history button {
+    display: block;
+    margin-bottom: 5px;
+    background-color: grey;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#current-weather {
+    margin-top: 20px;
+}
+
+#forecast {
+    margin-top: 20px;
+}
