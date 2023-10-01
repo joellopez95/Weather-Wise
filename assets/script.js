@@ -1,22 +1,31 @@
-
+var cityName = 'San Antonio';
 
 
 //GIVEN a weather dashboard with form inputs
 
 //WHEN I search for a city
-
+var apiURL = 'https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}';
 //obtain api using fetch (same ex as mini proj)
 fetch(apiURL)
 .then(function(response){
     if (!response.ok){
-
+      // Handle error by displaying message
+      console.error('Error: Unable to retrieve city coordinates.');  
+      return;
     }
     return response.json();
 })
 .then(function(data){
     console.log(data)
-
+    if (!data.coord || !data.coord.lat || !data.coord.lon){
+        console.error('Error: Unable to locate coord for city');  
+    }
+// Extract the latitude and longitude from the response
+    var lat = data.coord.lat;
+    var lon = data.coord.lon;
     var fiveDayURL = 'https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}';
+
+    fetch(fiveDayURL)
 
 })
 .catch(function(error){
