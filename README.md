@@ -21,6 +21,7 @@ To run the Weather-Wise application, follow these steps:
 - Click the "Search" button or press Enter.
 - The current weather information, including temperature, humidity, wind speed, and weather conditions, will be displayed.
 - Scroll down to view the 5-day weather forecast, which includes date, weather icons, temperature, humidity, and wind speed.
+- Link to Pages: https://joellopez95.github.io/Weather-Wise/
 - Visual step by step guide: 
 ![stepBystep](./assets/images/Start-page.png)
 ![stepBystep](./assets/images/5-day-forecast.png)
